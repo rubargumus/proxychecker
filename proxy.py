@@ -26,9 +26,9 @@ print("[+] Proxy'ler Deneniyor")
 
 for pro in addr: 
     try:
-        response = requests.get("http://google.com", timeout=5,proxies={'http': pro, 'https': pro})
+        response = requests.get("http://google.com", timeout=10,proxies={'http': pro, 'https': pro})
         response.raise_for_status()
-        print("Proxy çalışıyor")
+        print("Proxy çalışıyor  {}".format(pro))
         with open('proxy.txt', 'a') as file:
             file.write('\n'+pro)
     except requests.exceptions.RequestException as e:
