@@ -5,5 +5,5 @@ Hello my friends , this tool finds proxies and gives you individual tries worker
 
 # Using
 
-    python proxy.py
+    python3 proxy.py
 
